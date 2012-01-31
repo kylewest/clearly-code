@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +7,23 @@
   <title>kylewest/clearly-code @ GitHub</title>
 
   <style type="text/css">
-    a { background: #DDD; 
+    body {
+      margin-top: 1.0em;
+      background-color: #FFF;
+      font-family: Helvetica, Arial, FreeSans, san-serif;
+      color: #222;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+    h1 { font-size: 3.8em; color: #333; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #333; }
+    h3 { text-align: center; color: #333; }
+    a { color: #333; }
+    a.button { background: #DDD; 
         border: 1px solid #CCC; 
         color: #333; 
         text-decoration: none; 
@@ -15,10 +32,33 @@
         -moz-border-radius: 5px;
         border-radius: 5px;
         }
+
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+    pre { background: #eee; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
   </style>
 </head>
 
 <body>
-  <a href="javascript:function loadjs(a){var b=document.createElement('script');b.setAttribute('type','text/javascript'),b.onload=a,b.setAttribute('src','http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'),typeof b!='undefined'&&document.getElementsByTagName('head')[0].appendChild(b)}loadjs(function(){$('#readable_iframe').contents().find('head').append('<link rel=\'stylesheet\' type=\'text/css\' href=\'http://yandex.st/highlightjs/6.1/styles/solarized_dark.min.css\' />'),$.getScript('http://yandex.st/highlightjs/6.1/highlight.min.js',function(){$('#readable_iframe').contents().find('pre').each(function(){$(this).replaceWith(function(){var a=hljs.highlightAuto($(this).text());return'<pre><code>'+a.value+'</code></pre>'})})})})">Clearly Code</a>
+  <div id="container">
+    <h1><a href="http://github.com/kylewest/clearly-code">clearly-code</a></h1>
+    <div class="description">
+      <p>This bookmarklet uses <a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a> to highlight code blocks while using <a href="http://evernote.com/">Evernote</a> <a href="http://www.evernote.com/clearly/">Clearly</a>.</p>
+    </div>
+
+    <h2>Install</h2>
+    <p>Drag the button below to your bookmarks bar.</p>
+    <a class="button" href="javascript:function loadjs(a){var b=document.createElement('script');b.setAttribute('type','text/javascript'),b.onload=a,b.setAttribute('src','http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'),typeof b!='undefined'&&document.getElementsByTagName('head')[0].appendChild(b)}loadjs(function(){$('#readable_iframe').contents().find('head').append('<link rel=\'stylesheet\' type=\'text/css\' href=\'http://yandex.st/highlightjs/6.1/styles/solarized_dark.min.css\' />'),$.getScript('http://yandex.st/highlightjs/6.1/highlight.min.js',function(){$('#readable_iframe').contents().find('pre').each(function(){$(this).replaceWith(function(){var a=hljs.highlightAuto($(this).text());return'<pre><code>'+a.value+'</code></pre>'})})})})">Clearly Code</a>
+
+    <h2>Usage</h2>
+    <p>Please refer to <a href="http://github.com/kylewest/clearly-code">the project</a>.</p>
+
+    <div class="footer">
+      get the source code on GitHub : <a href="http://github.com/kylewest/clearly-code">kylewest/clearly-code</a>
+    </div>
+  </div>
+
 </body>
 </html>
