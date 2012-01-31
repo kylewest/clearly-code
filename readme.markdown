@@ -1,6 +1,6 @@
 # Clearly Code
 
-This bookmarklet uses [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) to highlight code blocks when using [Evernote](http://evernote.com/) [Clearly](http://www.evernote.com/clearly/).
+This bookmarklet uses [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) to highlight code blocks while using [Evernote](http://evernote.com/) [Clearly](http://www.evernote.com/clearly/).
 
 
 ## Before
