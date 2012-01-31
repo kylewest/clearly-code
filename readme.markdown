@@ -15,9 +15,7 @@ This bookmarklet uses [highlight.js](http://softwaremaniacs.org/soft/highlight/e
 
 ## Install
 
-Drag the Clearly Code link below to your bookmarks bar.
-
-<iframe width="100%" height="35px" src="http://kylewest.github.com/clearly-code/" style="border:0"></iframe>
+[Click here](http://kylewest.github.com/clearly-code/) then drag the `Clearly Code` button to your your bookmarks bar.
 
 
 ## Usage
