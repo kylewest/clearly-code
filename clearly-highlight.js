@@ -1,17 +1,16 @@
 function loadjs(callback) {
-    var fileref = document.createElement('script');
-    fileref.setAttribute('type', 'text/javascript');
-    fileref.onload = callback;
-    fileref.setAttribute('src', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js');
-    if (typeof fileref !== 'undefined') { document.getElementsByTagName('head')[0].appendChild(fileref); }
+  var fileref = document.createElement('script');
+  fileref.setAttribute('type', 'text/javascript');
+  fileref.onload = callback;
+  fileref.setAttribute('src', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js');
+  if (typeof fileref !== 'undefined') { document.getElementsByTagName('head')[0].appendChild(fileref); }
 }
 
 loadjs(function() {
-    $('#readable_iframe').contents().find('head').append('<link rel=\'stylesheet\' type=\'text/css\' href=\'http://yandex.st/highlightjs/6.1/styles/solarized_dark.min.css\' />');
-    $.getScript('http://yandex.st/highlightjs/6.1/highlight.min.js', function(){
-        
-        $('#readable_iframe').contents().find('pre').each(function() {
-            var $this = $(this);
+  $('#readable_iframe').contents().find('head').append('<link rel=\'stylesheet\' type=\'text/css\' href=\'http://yandex.st/highlightjs/6.1/styles/solarized_dark.min.css\' />');
+  $.getScript('http://yandex.st/highlightjs/6.1/highlight.min.js', function(){
+    $('#readable_iframe').contents().find('pre').each(function() {
+      var $this = $(this);
             var children = $this.children();
             console.log(children);
             if(children.length>0){
@@ -51,6 +50,7 @@ loadjs(function() {
                     return '<pre><code>' + hl.value + '</code></pre>';
                 });
             }
-        });
+     
     });
+  });
 });
