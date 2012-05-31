@@ -34,15 +34,14 @@ loadjs(function() {
                 }
                 if(!formated){
                     console.log('formating children');
-                    children.each(function(){
+                    children.wrapAll('<code><ol></ol></code>').each(function(){
                         formated=true;
                         $(this).replaceWith(function() {
                             var hl = hljs.highlightAuto($(this).text());
                             return '<li>' + hl.value + '</li>';
                         });
                     });
-                    $this.wrap('<pre><code><ol></ol></code></pre>');
-                }else console.log('formating ol li');
+                }
             }else{
                 console.log('formating not formated code');
                 $(this).replaceWith(function() {
